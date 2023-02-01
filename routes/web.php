@@ -16,10 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 // Route::get('/user', function () {
 //     return view('user.index');
 // })->name('user');
 
 //button
 Route::get('/user', [UserController::class, 'index'])->name('user'); //login button
+Route::get('/login', [UserController::class, 'login'])->name('login'); //login button

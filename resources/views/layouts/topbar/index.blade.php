@@ -4,7 +4,7 @@
       <!-- Topbar Logo -->
       <div class="logo-topbar">
         <!-- Logo light -->
-        <a href="index.html" class="logo-light">
+        <a onclick="window.location='{{ route('home') }}'" class="logo-light">
           <span class="logo-lg">
             <img src="assets/hyper5/images/logo.png" alt="logo" height="22" />
           </span>

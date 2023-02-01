@@ -30,7 +30,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><button type="button" class="btn btn-outline-success ms-3" onclick="window.location='{{ route('user') }}'">Login</button></li>
+          <li><button type="button" class="btn btn-outline-success ms-3" onclick="window.location='{{ route('login') }}'">Login</button></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
