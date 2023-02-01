@@ -2,300 +2,173 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-        .modal-box {
-            font-family: 'Poppins', sans-serif;
+    <!-- Design by foolishdeveloper.com -->
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
 
-        .show-modal {
-            color: #fff;
-            background: linear-gradient(to right, #33a3ff, #0675cf, #49a6fd);
-            font-size: 18px;
-            font-weight: 600;
-            text-transform: capitalize;
-            padding: 10px 15px;
-            margin: 200px auto 0;
-            border: none;
-            outline: none;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            display: block;
-            transition: all 0.3s ease 0s;
+        body {
+            background-color: #080710;
         }
 
-        .show-modal:hover,
-        .show-modal:focus {
-            color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-            outline: none;
-        }
-
-        .modal-dialog {
-            width: 400px;
-            margin: 70px auto 0;
-        }
-
-        .modal-dialog {
-            transform: scale(0.5);
-        }
-
-        .modal-dialog {
-            transform: scale(1);
-        }
-
-        .modal-dialog .modal-content {
-            text-align: center;
-            border: none;
-        }
-
-        .modal-content .close {
-            color: #fff;
-            background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
-            font-size: 25px;
-            font-weight: 400;
-            text-shadow: none;
-            line-height: 27px;
-            height: 25px;
-            width: 25px;
-            border-radius: 50%;
-            overflow: hidden;
-            opacity: 1;
+        .background {
+            width: 430px;
+            height: 520px;
             position: absolute;
-            left: auto;
-            right: 8px;
-            top: 8px;
-            z-index: 1;
-            transition: all 0.3s;
-        }
-
-        .modal-content .close:hover {
-            color: #fff;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .close:focus {
-            outline: none;
-        }
-
-        .modal-body {
-            padding: 60px 40px 40px !important;
-        }
-
-        .modal-body .title {
-            color: #026fd4;
-            font-size: 33px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin: 0 0 10px;
-        }
-
-        .modal-body .description {
-            color: #9A9EA9;
-            font-size: 16px;
-            margin: 0 0 20px;
-        }
-
-        .modal-body .form-group {
-            text-align: left;
-            margin-bottom: 20px;
-            position: relative;
-        }
-
-        .modal-body .input-icon {
-            color: #777;
-            font-size: 18px;
-            transform: translateY(-50%);
-            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
             top: 50%;
-            left: 20px;
         }
 
-        .modal-body .form-control {
-            font-size: 17px;
-            height: 45px;
-            width: 100%;
-            padding: 6px 0 6px 50px;
-            margin: 0 auto;
-            border: 2px solid #eee;
-            border-radius: 5px;
-            box-shadow: none;
+        .background .shape {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .shape:first-child {
+            background: linear-gradient(#1845ad,
+                    #23a2f6);
+            left: -80px;
+            top: -80px;
+        }
+
+        .shape:last-child {
+            background: linear-gradient(to right,
+                    #ff512f,
+                    #f09819);
+            right: -30px;
+            bottom: -80px;
+        }
+
+        form {
+            height: 520px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+        }
+
+        form * {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            letter-spacing: 0.5px;
             outline: none;
+            border: none;
         }
 
-        .form-control::placeholder {
-            color: #AEAFB1;
+        form h3 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
         }
 
-        .form-group.checkbox {
-            width: 130px;
-            margin-top: 0;
-            display: inline-block;
-        }
-
-        .form-group.checkbox label {
-            color: #9A9EA9;
-            font-weight: normal;
-        }
-
-        .form-group.checkbox input[type=checkbox] {
-            margin-left: 0;
-        }
-
-        .modal-body .forgot-pass {
-            color: #7F7FD5;
-            font-size: 13px;
-            text-align: right;
-            width: calc(100% - 135px);
-            margin: 2px 0;
-            display: inline-block;
-            vertical-align: top;
-            transition: all 0.3s ease 0s;
-        }
-
-        .forgot-pass:hover {
-            color: #9A9EA9;
-            text-decoration: underline;
-        }
-
-        .modal-content .modal-body .btn {
-            color: #fff;
-            background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
+        label {
+            display: block;
+            margin-top: 30px;
             font-size: 16px;
             font-weight: 500;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            line-height: 38px;
+        }
+
+        input {
+            display: block;
+            height: 50px;
             width: 100%;
-            height: 40px;
-            padding: 0;
-            border: none;
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        ::placeholder {
+            color: #e5e5e5;
+        }
+
+        button {
+            margin-top: 50px;
+            width: 100%;
+            background-color: #ffffff;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
             border-radius: 5px;
-            border: none;
-            display: inline-block;
-            transition: all 0.6s ease 0s;
+            cursor: pointer;
         }
 
-        .modal-content .modal-body .btn:hover {
-            color: #fff;
-            letter-spacing: 2px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        .social {
+            margin-top: 30px;
+            display: flex;
         }
 
-        .modal-content .modal-body .btn:focus {
-            outline: none;
+        .social div {
+            background: red;
+            width: 150px;
+            border-radius: 3px;
+            padding: 5px 10px 10px 5px;
+            background-color: rgba(255, 255, 255, 0.27);
+            color: #eaf0fb;
+            text-align: center;
         }
 
-        @media only screen and (max-width: 480px) {
-            .modal-dialog {
-                width: 95% !important;
-            }
+        .social div:hover {
+            background-color: rgba(255, 255, 255, 0.47);
+        }
 
-            .modal-content .modal-body {
-                padding: 60px 20px 40px !important;
-            }
+        .social .fb {
+            margin-left: 25px;
+        }
+
+        .social i {
+            margin-right: 4px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="modal-box">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary btn-lg show-modal" data-toggle="modal"
-                        data-target="#myModal">
-                        Login Form
-                    </button>
-                    <button type="button" class="btn btn-primary btn-lg show-modal" onclick="window.location='{{ route('home') }}'">
-                        Back
-                    </button>
+    <button class="btn btn-primary" onclick="window.location='{{route('home')}}'">home</button>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content clearfix">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">×</span></button>
-                                <div class="modal-body">
-                                    <h3 class="title">Login Form</h3>
-                                    <p class="description">Login here Using Email & Password</p>
-                                    <div class="form-group">
-                                        <span class="input-icon"><i class="fa fa-user"></i></span>
-                                        <input type="email" class="form-control" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group">
-                                        <span class="input-icon"><i class="fas fa-key"></i></span>
-                                        <input type="password" class="form-control" placeholder="Password">
-                                    </div>
-                                    <div class="form-group checkbox">
-                                        <input type="checkbox">
-                                        <label>Remamber me</label>
-                                    </div>
-                                    <a href="" class="forgot-pass">Forgot Password?</a>
-                                    <button class="btn">Login</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-    </script>
+    <form>
+        <h3>Login Here</h3>
 
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <div class="social">
+            <div class="go"><i class="fab fa-google"></i> Google</div>
+            <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+        </div>
+    </form>
 </body>
 
 </html>
-
-{{--
-<!--Modal: Login with Avatar Form-->
-
-<div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
-        <!--Content-->
-        <div class="modal-content">
-
-            <!--Header-->
-            <div class="modal-header">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%281%29.webp" alt="avatar"
-                    class="rounded-circle img-responsive">
-            </div>
-            <!--Body-->
-            <div class="modal-body text-center mb-1">
-
-                <h5 class="mt-1 mb-2">Maria Doe</h5>
-
-                <div class="md-form ml-0 mr-0">
-                    <input type="password" type="text" id="form29" class="form-control form-control-sm validate ml-0">
-                    <label data-error="wrong" data-success="right" for="form29" class="ml-0">Enter password</label>
-                </div>
-
-                <div class="text-center mt-4">
-                    <div class="row">
-                        <button class="btn btn-outline-success mt-1">Back <i class="fas fa-sign-in ml-1"></i></button>
-                        <button class="btn btn-outline-dark">Login <i class="fas fa-sign-in ml-1"></i></button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!--/.Content-->
-    </div>
-</div>
-<!--Modal: Login with Avatar Form-->
-
-<div class="text-center">
-    <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#modalLoginAvatar">Launch
-        Modal Login with Avatar</a>
-</div> --}}
