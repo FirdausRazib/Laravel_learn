@@ -6,11 +6,11 @@
         <!-- Logo light -->
         <a href="index.html" class="logo-light">
           <span class="logo-lg">
-            <img src="assets/images/logo.png" alt="logo" height="22" />
+            <img src="assets/hyper5/images/logo.png" alt="logo" height="22" />
           </span>
           <span class="logo-sm">
             <img
-              src="assets/images/logo-sm.png"
+              src="assets/hyper5/images/logo-sm.png"
               alt="small logo"
               height="22"
             />
@@ -21,14 +21,14 @@
         <a href="index.html" class="logo-dark">
           <span class="logo-lg">
             <img
-              src="assets/images/logo-dark.png"
+              src="assets/hyper5/images/logo-dark.png"
               alt="dark logo"
               height="22"
             />
           </span>
           <span class="logo-sm">
             <img
-              src="assets/images/logo-dark-sm.png"
+              src="assets/hyper5/hyper5/images/logo-dark-sm.png"
               alt="small logo"
               height="22"
             />
@@ -88,7 +88,7 @@
             aria-expanded="false"
           >
             <img
-              src="assets/images/flags/us.jpg"
+              src="assets/hyper5/images/flags/us.jpg"
               alt="user-image"
               class="me-0 me-sm-1"
               height="12"
@@ -106,7 +106,7 @@
             <!-- item-->
             <a href="javascript:void(0);" class="dropdown-item notify-item">
               <img
-                src="assets/images/flags/germany.jpg"
+                src="assets/hyper5/images/flags/germany.jpg"
                 alt="user-image"
                 class="me-1"
                 height="12"
@@ -117,7 +117,7 @@
             <!-- item-->
             <a href="javascript:void(0);" class="dropdown-item notify-item">
               <img
-                src="assets/images/flags/italy.jpg"
+                src="assets/hyper5/images/flags/italy.jpg"
                 alt="user-image"
                 class="me-1"
                 height="12"
@@ -128,7 +128,7 @@
             <!-- item-->
             <a href="javascript:void(0);" class="dropdown-item notify-item">
               <img
-                src="assets/images/flags/spain.jpg"
+                src="assets/hyper5/images/flags/spain.jpg"
                 alt="user-image"
                 class="me-1"
                 height="12"
@@ -139,7 +139,7 @@
             <!-- item-->
             <a href="javascript:void(0);" class="dropdown-item notify-item">
               <img
-                src="assets/images/flags/russia.jpg"
+                src="assets/hyper5/images/flags/russia.jpg"
                 alt="user-image"
                 class="me-1"
                 height="12"
@@ -260,7 +260,7 @@
                     <div class="flex-shrink-0">
                       <div class="notify-icon">
                         <img
-                          src="assets/images/users/avatar-2.jpg"
+                          src="assets/hyper5/images/users/avatar-2.jpg"
                           class="img-fluid rounded-circle"
                           alt=""
                         />
@@ -323,7 +323,7 @@
                     <div class="flex-shrink-0">
                       <div class="notify-icon">
                         <img
-                          src="assets/images/users/avatar-4.jpg"
+                          src="assets/hyper5/images/users/avatar-4.jpg"
                           class="img-fluid rounded-circle"
                           alt=""
                         />
@@ -377,14 +377,14 @@
               <div class="row g-0">
                 <div class="col">
                   <a class="dropdown-icon-item" href="#">
-                    <img src="assets/images/brands/slack.png" alt="slack" />
+                    <img src="assets/hyper5/images/brands/slack.png" alt="slack" />
                     <span>Slack</span>
                   </a>
                 </div>
                 <div class="col">
                   <a class="dropdown-icon-item" href="#">
                     <img
-                      src="assets/images/brands/github.png"
+                      src="assets/hyper5/images/brands/github.png"
                       alt="Github"
                     />
                     <span>GitHub</span>
@@ -393,7 +393,7 @@
                 <div class="col">
                   <a class="dropdown-icon-item" href="#">
                     <img
-                      src="assets/images/brands/dribbble.png"
+                      src="assets/hyper5/images/brands/dribbble.png"
                       alt="dribbble"
                     />
                     <span>Dribbble</span>
@@ -405,7 +405,7 @@
                 <div class="col">
                   <a class="dropdown-icon-item" href="#">
                     <img
-                      src="assets/images/brands/bitbucket.png"
+                      src="assets/hyper5/images/brands/bitbucket.png"
                       alt="bitbucket"
                     />
                     <span>Bitbucket</span>
@@ -414,7 +414,7 @@
                 <div class="col">
                   <a class="dropdown-icon-item" href="#">
                     <img
-                      src="assets/images/brands/dropbox.png"
+                      src="assets/hyper5/images/brands/dropbox.png"
                       alt="dropbox"
                     />
                     <span>Dropbox</span>
@@ -423,7 +423,7 @@
                 <div class="col">
                   <a class="dropdown-icon-item" href="#">
                     <img
-                      src="assets/images/brands/g-suite.png"
+                      src="assets/hyper5/images/brands/g-suite.png"
                       alt="G Suite"
                     />
                     <span>G Suite</span>
@@ -472,7 +472,7 @@
           >
             <span class="account-user-avatar">
               <img
-                src="assets/images/users/avatar-1.jpg"
+                src="assets/hyper5/images/users/avatar-1.jpg"
                 alt="user-image"
                 class="rounded-circle"
               />
@@ -580,7 +580,7 @@
               <div class="d-flex">
                 <img
                   class="d-flex me-2 rounded-circle"
-                  src="assets/images/users/avatar-2.jpg"
+                  src="assets/hyper5/images/users/avatar-2.jpg"
                   alt="Generic placeholder image"
                   height="32"
                 />
@@ -596,7 +596,7 @@
               <div class="d-flex">
                 <img
                   class="d-flex me-2 rounded-circle"
-                  src="assets/images/users/avatar-5.jpg"
+                  src="assets/hyper5/images/users/avatar-5.jpg"
                   alt="Generic placeholder image"
                   height="32"
                 />

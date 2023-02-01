@@ -10,10 +10,10 @@
     <meta content="Coderthemes" name="author" />
 
     <!-- Icons css -->
-    <link href="{{asset('assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('/assets/hyper5/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
 
     <!-- App css -->
-    <link href="{{asset('assets/css/app-modern.min.css')}}" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="{{asset('/assets/hyper5/css/app-modern.min.css')}}" rel="stylesheet" type="text/css" id="app-style" />
 </head>
 
 <body>
@@ -53,10 +53,10 @@
     <!-- End Theme Settings -->
 
     <!-- Vendor js -->
-    <script src="{{asset('assets/js/vendor.min.js')}}"></script>
+    <script src="{{asset('/assets/hyper5/js/vendor.min.js')}}"></script>
 
     <!-- App js -->
-    <script src="{{asset('assets/js/app.min.js')}}"></script>
+    <script src="{{asset('/assets/hyper5/js/app.min.js')}}"></script>
 </body>
 
 </html>

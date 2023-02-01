@@ -3,10 +3,10 @@
         <!-- Logo Light -->
         <a href="index.html" class="logo logo-light">
           <span class="logo-lg">
-            <img src="assets/images/logo.png" alt="logo" height="22" />
+            <img src="assets/hyper5/images/logo.png" alt="logo" height="22" />
           </span>
           <span class="logo-sm">
-            <img src="assets/images/logo-sm.png" alt="small logo" height="22" />
+            <img src="assets/hyper5/images/logo-sm.png" alt="small logo" height="22" />
           </span>
         </a>
 
@@ -14,14 +14,14 @@
         <a href="index.html" class="logo logo-dark">
           <span class="logo-lg">
             <img
-              src="assets/images/logo-dark.png"
+              src="assets/hyper5/images/logo-dark.png"
               alt="dark logo"
               height="22"
             />
           </span>
           <span class="logo-sm">
             <img
-              src="assets/images/logo-dark-sm.png"
+              src="assets/hyper5/images/logo-dark-sm.png"
               alt="small logo"
               height="22"
             />
@@ -45,7 +45,7 @@
           <div class="leftbar-user">
             <a href="pages-profile.html">
               <img
-                src="assets/images/users/avatar-1.jpg"
+                src="assets/hyper5/images/users/avatar-1.jpg"
                 alt="user-image"
                 height="42"
                 class="rounded-circle shadow-sm"
@@ -913,7 +913,7 @@
               <i class="mdi mdi-close"></i>
             </a>
             <img
-              src="assets/images/svg/help-icon.svg"
+              src="assets/hyper5/images/svg/help-icon.svg"
               height="90"
               alt="Helper Icon Image"
             />
