@@ -801,4 +801,5 @@
         <!-- end row -->
       </div>
       <!-- container -->
+    </div>
 @endsection

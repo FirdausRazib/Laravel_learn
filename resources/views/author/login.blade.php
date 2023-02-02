@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets/landing/css/style.css')}}">
     <!--Stylesheet-->
     <style media="screen">
         *,
@@ -19,7 +20,7 @@
         }
 
         body {
-            background-color: #080710;
+            background-image: url('https://wallpapercave.com/wp/wp2823483.jpg') ;
         }
 
         .background {
@@ -144,11 +145,17 @@
         .social i {
             margin-right: 4px;
         }
+        .button{
+            position: absolute;
+            width: 80px ;
+            height: 50px;
+            margin: 20px;
+        }
     </style>
 </head>
 
 <body>
-    <button class="btn btn-primary" onclick="window.location='{{route('home')}}'">home</button>
+    <button class="button" onclick="window.location='{{route('home')}}'">Home</button>
 
     <div class="background">
         <div class="shape"></div>
@@ -163,7 +170,7 @@
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <button>Log In</button>
+        <button onclick="window.location='{{route('user')}}'">Log In</button>
         <div class="social">
             <div class="go"><i class="fab fa-google"></i> Google</div>
             <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>

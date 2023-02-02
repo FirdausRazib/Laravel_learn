@@ -24,3 +24,7 @@ Route::get('/', function () {
 //button
 Route::get('/user', [UserController::class, 'index'])->name('user'); //login button
 Route::get('/login', [UserController::class, 'login'])->name('login'); //login button
+
+
+//Users
+Route::get('/user/list', [UserController::class, 'show'])->name('userlist'); //login button
